@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    /*best practice for centering an element*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37,37,37);
+}
+
+button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: 400;
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: black;
+    color: aqua;
+    border: 2px solid white;
+}
+
+button:active {
+    transform: translateY(3px);
+}
