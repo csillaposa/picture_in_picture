@@ -2,7 +2,7 @@ const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
 
 //prompt to select media stream, pass to video element, then play
-//https://css-tricks.com/an-introduction-to-the-picture-in-picture-web-api/
+//https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture
 async function selectMediaStream() {
     try {
         //to capture live stream contents
@@ -18,6 +18,7 @@ async function selectMediaStream() {
     }
 }
 
+//https://css-tricks.com/an-introduction-to-the-picture-in-picture-web-api/
 button.addEventListener('click', async () => {
     //disable button
     button.disabled = true;
